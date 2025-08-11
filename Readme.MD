@@ -19,6 +19,7 @@ Users can register, log in, and perform CRUD operations on their own tasks.
 
     - Delete a task
 
+
 ## 🛠 Tech Stack
 - **Flask** – API framework
 
@@ -27,6 +28,7 @@ Users can register, log in, and perform CRUD operations on their own tasks.
 - **bcrypt** – Password hashing
 
 - **Python** – Core programming language
+
 
 ## 📦 Installation
 
@@ -58,6 +60,7 @@ Create a .env file:
 
 `python app.py`
 
+
 ## 🔑 Authentication Flow
 
 - **Register** → /auth/register
@@ -68,29 +71,32 @@ Create a .env file:
     
     `Authorization: Bearer <your_token>`
 
+
 ## 📚 API Endpoints
 
 ### Auth
 
-**Method**	    **Endpoint**	    **Description**
+**Method**	 |   **Endpoint**	  |  **Description**
 
-POST	        `/auth/register`	Create a new account
+POST	     |   `/auth/register` |	Create a new account
 
-POST	        `/auth/login`	    Log in & get token
+POST	     |   `/auth/login`	  |   Log in & get token
+
 
 ### Tasks (Require JWT Token)
 
-**Method**	    **Endpoint**	    **Description**
+**Method**	 |   **Endpoint**	  |  **Description**
 
-GET	            /tasks	            Get all tasks
+GET	         |   /tasks	          | Get all tasks
 
-POST	        /tasks	            Create a task
+POST	     |   /tasks	          | Create a task
 
-GET	            /tasks/<task_id>	Get single task
+GET	         |   /tasks/<task_id> |	Get single task
 
-PUT	            /tasks/<task_id>	Update a task
+PUT	         |   /tasks/<task_id> |	Update a task
 
-DELETE	        /tasks/<task_id>	Delete a task
+DELETE	     |   /tasks/<task_id>  |	Delete a task
+
 
 ## 🧪 Example Request
 
